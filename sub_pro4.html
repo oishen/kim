@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Sub</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet"  href="sub_pro3.css"/>
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    text-align: center;
+		    color: #FFF;
+		}
+		.demo{
+			width: 600px;
+		}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="sub_pro1.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+    </script>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-sm p-1 fixed-top">
+        <div class="container">
+            <a href="index.html" id="logo">
+                KIM
+            </a>
+    
+            <ul class="navbar-nav col-sm-8">
+                <li class="nav-item ms-4 pt-1">
+                    <a href="team.html" class="text-decoration-none">TEAM</a>
+                </li>
+                <li class="nav-item ms-4 pt-1">
+                    <a href="service.html" class="text-decoration-none">SERVICE</a>
+                </li>
+                <li class="nav-item ms-4 pt-1">
+                    <a href="project.html" class="text-decoration-none">PROJECT</a>
+                </li>
+                <li class="nav-item ms-4 pt-1">
+                    <img src="home-img/dark.png" id="icon">
+                </li>
+            </ul>
+
+            <!--icon responsive-->
+            <div class="dropdown dropstart" id="MENU1">
+                <img src="home-img/dark.png" id="icon1">
+                <a href="#" class="btn text-dark border-0" data-bs-toggle="dropdown">
+                    <img src="home-img/dark-menu.png" id="menu">
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                    <li class="dropdown-item text-light"><a href="team.html" class="text-decoration-none">TEAM</a></li>
+                    <li class="dropdown-item text-light"><a href="service.html" class="text-decoration-none">SERVICE</a></li>
+                    <li class="dropdown-item text-light"><a href="project.html" class="text-decoration-none">PROJECT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="padding-bottom: 50px;"></div>
+
+    <div>
+        <a href="project.html">
+            <img src="sub_pro1-img/arrow-left-black.png" style="width: 25px; margin-left: 50px;">
+        </a>
+    </div>
+
+
+	<div class="container" id="sec1">
+        <div class="row">
+            <div class="item col-sm-8">            
+                <div class="clearfix" style="width: 100%;">
+                    <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                        <li data-thumb="sub_pro4-img/s1.jpg.png"> 
+                            <img src="sub_pro4-img/s1.jpg.png" />
+                        </li>
+                        <li data-thumb="sub_pro4-img/s2.jpg.png"> 
+                            <img src="sub_pro4-img/s2.jpg.png" />
+                        </li>
+                        <li data-thumb="sub_pro4-img/s3.jpg.png"> 
+                            <img src="sub_pro4-img/s3.jpg.png" />
+                        </li>
+                        <li data-thumb="sub_pro4-img/s4.jpg.png"> 
+                            <img src="sub_pro4-img/s4.jpg.png" />
+                        </li>
+                        <li data-thumb="sub_pro4-img/s5.jpg.png"> 
+                            <img src="sub_pro4-img/s5.jpg.png" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-sm-4">
+                <div id="block">
+                    <h3>PEN VILLA</h3>
+                    <p>Created: 27-Jan-2022</p>
+                    <p>You can edit text on your website by double clicking on a text box on your website. Alternatively, when you select a text box a settings menu will appear. your website by double clicking on a text box on your website. Alternatively, when you select a text box</p>
+                    <a href="" class="btn btn-dark rounded-1">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>	
+
+    <div class="container pt-5 pb-5" id="sec2">
+        <h1 class="pb-5">More Projects</h1>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="sub_pro1.html">
+                    <img src="sub_pro4-img/king.png">
+                </a>
+                <a href="sub_pro1.html"><b>King Villa</b></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="sub_pro2.html">
+                    <img src="sub_pro4-img/twin.png">
+                </a>
+                <a href="sub_pro2.html"><b>Twin Villa</b></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="sub_pro3.html">
+                    <img src="sub_pro4-img/queen.png">
+                </a>
+                <a href="sub_pro3.html"><b>Queen Villa</b></a>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <h1>STAY IN TOUCH WITH US</h1>
+            <div class="d-flex">
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/facebook.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/instagram.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/pinterest.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/x.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/linkedin.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/youtube.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/tiktok.png">
+                </a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <img src="home-img/mail.png">
+                </a>
+
+            </div>
+
+            <!--map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d888.5266273106229!2d105.02372089782084!3d11.241312181350125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31096131ef6d0917%3A0xd4a7e6cc3066a9df!2z4Z6Y4Z6O4Z-S4Z6M4Z6bLuGenOGet-GekeGfkuGemeGetuGem-GfkOGemeGeluGfkuGemuGfguGegOGeouGfhuGelOGet-Gemw!5e0!3m2!1sen!2skh!4v1695523467864!5m2!1sen!2skh" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <p>Copyright © KIM 2023 / ALL Right Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+       
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+       
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+       
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        var icon = document.getElementById("icon");
+        var img = document.getElementById("menu");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-mode");
+            if(document.body.classList.contains("dark-mode")){
+                icon.src = "home-img/white.png";
+                mybutton.src = "home-img/icons8-slide-up-48.png";
+            }else{
+                icon.src = "home-img/dark.png";
+                mybutton.src = "home-img/arrow.png";
+            }
+        }
+
+        icon1.onclick = function(){
+            document.body.classList.toggle("dark-mode");
+            if(document.body.classList.contains("dark-mode")){
+                icon1.src = "home-img/white.png";
+                img.src = "home-img/white-menu.png";
+                mybutton.src = "home-img/icons8-slide-up-48.png";
+            }else{
+                icon1.src = "home-img/dark.png";
+                img.src = "home-img/dark-menu.png";
+                mybutton.src = "home-img/arrow.png";
+            }
+        }
+    </script>
+</body>
