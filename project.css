@@ -57,6 +57,12 @@ body::-webkit-scrollbar {
 .nav-item a:hover::after{
     width: 100%;
 }
+.nav-item:nth-child(3) a:hover::after{
+    width: 0;
+}
+.nav-item:nth-child(3) a{
+    border-bottom: 2px solid var(--second-color);
+}
 #icon, #icon1{
     width: 20px;
     cursor: pointer;
